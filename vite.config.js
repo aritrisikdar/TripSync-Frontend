@@ -6,8 +6,8 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/destination': {
-        target: 'http://localhost:5000',
+      '/recommend': {
+        target: 'http://localhost:8000',
         changeOrigin: true
       }
     }
